@@ -22,7 +22,7 @@ function message(b, id, mass) {
             d[0].caption = text;
             d[0].parse_mode = 'markdown';
         }
-        //
+        // Если нужен callback то использовать сдесь
         b.sendMediaGroup(id, d);
         //
         delete mass[name];
